@@ -27,17 +27,16 @@ const textVariants = {
 // کامپوننت بنر MantraYou با استفاده از MUI Grid و Typography
 const MantraYouBanner = () => {
   return (
-    <Grid container justifyContent="center" alignItems="center" direction="column">
+    <Grid my={6} container justifyContent="center" alignItems="center" direction="column">
       <Grid item>
         <motion.div variants={bannerVariants} initial="hidden" animate="visible">
-          <Banner component="h1">چرا مانترا؟</Banner>
+          <Banner component="h1">چرا صرافی نوری؟</Banner>
         </motion.div>
       </Grid>
       <Grid item mt={1}>
         <motion.div variants={textVariants} initial="hidden" animate="visible">
           <Typography fontSize={{xs:'12px',sm:'18px'}} variant="subtitle1" style={{ color: '#4a5568', textAlign: 'center', lineHeight: '38px', fontWeight: 400, maxWidth: '600px', fontFamily: 'iran-sans' }}>
-            مانترا تنها بوت‌کمپی است که همراه با مربیگری مستقیم، دسترسی مادام‌العمر،<br />
-            و بازخورد شخصی است...با یک دهم هزینه سایر بوت‌کمپ‌ها.
+          صرافی نوری با بیش از چهار دهه سابقه در بازار کرمانشاه، و با مجوز رسمی از بانک مرکزی، و ارائه سکه‌های بانکی تنظیم شده و شمش‌هایی با تایید اصالت از طریق NFC یکی از صرافی‌های مطرح در سطح کشور می‌باشد.
           </Typography>
         </motion.div>
       </Grid>
