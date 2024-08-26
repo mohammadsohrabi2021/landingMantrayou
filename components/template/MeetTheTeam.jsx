@@ -125,12 +125,12 @@ function MeetTheTeam() {
     { name: "", role: "", bgColor: "#003366", showImage: false },
   ];
   const Highlight = styled.span`
-    color: red; /* رنگ قرمز برای کلمه "مانترا" */
+    color: red; /* رنگ قرمز برای کلمه "صرافی نوری" */
   `;
   return (
     <Container>
       <Title>
-        با تیم پشت <Highlight>مانترا</Highlight> آشنا شوید
+        با تیم پشت <Highlight>صرافی نوری</Highlight> آشنا شوید
       </Title>
 
       <TeamGrid>
