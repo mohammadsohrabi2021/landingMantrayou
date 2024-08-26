@@ -21,11 +21,12 @@ function LandingBanner() {
           variant="h3"
           color={"#030303"}
           fontSize={"22px"}
-          lineHeight={{xs:'40px',sm:"90px"}}
+          lineHeight={{xs:'40px',sm:"50px"}}
           fontFamily={"iran-sans"}
           fontWeight={"bold"}
+          maxWidth={'80%'}
         >
-          با کدنویسی فریلنسری درآمد جانبی کسب کنید
+        صرافی نوری با بیش از چهل دهه سابقه در بازار کرمانشاه - خرید و فروش ارز و مسکوکات بانکی - تحت نظارت بانک مرکزی
         </Typography>
         <Typography
           maxWidth={"585px"}
@@ -36,9 +37,8 @@ function LandingBanner() {
           color={"#4a5568"}
           variant="body1"
         >
-          در مورد اهداف شغلی و اهداف سبک زندگی خود با تیم ما صحبت کنید و سپس
-          تصمیم بگیرید که آیا Bootcamp ما می تواند به شما کمک کند تا به آنجا
-          برسید.
+         امنیت، سادگی، سرعت و نرخ عالی از ویژگی های ما است.<br/>
+ارسال حواله ارزش به سراسر دنیا به صورت واریز به حساب و تحویل نقدی.
         </Typography>
         <Button
           variant="contained"
@@ -55,7 +55,7 @@ function LandingBanner() {
             },
           }}
         >
-          تماس مربیگری رایگان خود را درخواست کنید <ArrowBackIcon />
+         فرم ارتباط با ما<ArrowBackIcon />
         </Button>
       </Grid>
       <Box
