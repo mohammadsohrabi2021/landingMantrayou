@@ -17,14 +17,14 @@ function TrustSection() {
             variant="h4"
             fontWeight="bold"
             sx={{ color: "#333", marginBottom: 4 }}
-            fontSize={'22px'}
-            fontFamily={'iran-sans'}
+            fontSize={"22px"}
+            fontFamily={"iran-sans"}
           >
-            اعتماد بیش از{" "}
+            مورد اعتماد بیش از
             <Typography component="span" color="red" variant="h4">
-              3000+
+              100
             </Typography>{" "}
-            دانشجو در سراسر جهان
+            هزار مشتری در سراسر جهان
           </Typography>
         </Grid>
 
@@ -41,8 +41,8 @@ function TrustSection() {
           <Typography variant="h2" color="red" fontWeight="bold">
             4.9
           </Typography>
-          <Typography variant="body2" color="textSecondary">
-            بر اساس بیش از 200+ بررسی
+          <Typography variant="body2" color="textSecondary" fontFamily={'iran-sans'}>
+          بر اساس بیش از چندین  دیدگاه در گوگل 
           </Typography>
         </Grid>
 
@@ -67,7 +67,7 @@ function TrustSection() {
             <Typography
               variant="h6"
               fontWeight="bold"
-              sx={{ color: "#333", marginBottom: 1 }}
+              sx={{ color: "#333", marginBottom: 1, fontFamily:'iran-sans' }}
             >
               <Box
                 component="span"
@@ -75,14 +75,15 @@ function TrustSection() {
                   color: "red",
                   fontSize: "2rem",
                   fontWeight: "bold",
+                 
                 }}
               >
-                <code>&lt;/&gt;</code>
+                {/* <code>&lt;/&gt;</code> */}
               </Box>{" "}
-              Bootcamp برتر
+              بانک مرکزی
             </Typography>
-            <Typography variant="body2" color="textSecondary">
-              Course Report 5.0 | Bootcamps
+            <Typography variant="body2" color="textSecondary"   fontFamily='iran-sans'>
+            تحت مجوز بانک مرکزی - شماره ثبت ۱۰۳۵۳ - کد ۱۳۳
             </Typography>
           </Box>
         </Grid>
@@ -109,10 +110,11 @@ function TrustSection() {
               variant="h6"
               fontWeight="bold"
               sx={{ color: "#333", marginBottom: 1 }}
+              fontFamily={'iran-sans'}
             >
-              3000+ دانشجو در سراسر جهان
+              +۱۰۰ هزار مشتری در سراسر دنیا
             </Typography>
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body2" color="textSecondary"  fontFamily={'iran-sans'}>
               به ما اعتماد کرده‌اند
             </Typography>
           </Box>
