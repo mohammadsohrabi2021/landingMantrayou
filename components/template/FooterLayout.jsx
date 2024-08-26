@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid, Typography, List, ListItem, Link } from "@mui/material";
 import Image from "next/image";
 import NextLink from "next/link";
-import logoSite from "../../assets/images/RedLogo.png";
+import logoSite from "../../assets/images/DarkTransparent.png";
 import { pages, resources } from "@/Data/DataMuneFooter";
 
 
@@ -85,7 +85,7 @@ function FooterLayout() {
         }}
       >
         <Typography fontFamily={'iran-sans'}fontSize={{xs:'12px',sm:'16px'}}fontWeight={400}lineHeight={'24px'}>
-          ©۱۴۰۳ مانترا  | تمامی حقوق محفوظ است
+          ©۱۴۰۳ صرافی نوری  | تمامی حقوق محفوظ است
         </Typography>
       </Box>
     </Box>
