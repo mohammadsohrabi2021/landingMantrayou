@@ -72,7 +72,7 @@ color: red; // Directly applying the color change
   return (
     <Grid >
        <Title>
-        به صورت آزاد یا تمام وقت در <Highlight>شرکت هایی</Highlight> مانند...
+       همکاران ما<Highlight> در سطح کشور  </Highlight> مانند...
       </Title>
       <LogoSliderWrapper>
         <LogoContainer>
