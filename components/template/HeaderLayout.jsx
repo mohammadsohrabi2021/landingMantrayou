@@ -15,9 +15,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import logoSite from "../../assets/images/RedLogo.png";
+import LightTransparent from "../../assets/images/LightTransparent.png";
+import logoSite from "../../assets/images/DarkTransparent.png";
 import { dataMuneHeader } from "@/Data/DataMune";
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import Link from "next/link";
 function HeaderLayout() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
@@ -50,7 +52,14 @@ function HeaderLayout() {
       onClick={handleDrawerToggle}
       onKeyDown={handleDrawerToggle}
     >
-      <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: 2,
+        }}
+      >
         <Image src={logoSite} width={100} height={70} alt="Logo" />
         <IconButton sx={{ color: "white" }} onClick={handleDrawerToggle}>
           <CloseIcon />
@@ -84,13 +93,22 @@ function HeaderLayout() {
 
   return (
     <>
-      <AppBar position="fixed"  className={sticky ? "sticky" : ""} sx={{ bgcolor: "#fff", boxShadow: "0 2px 4px rgba(0,0,0,0.1)" }}>
-        <Toolbar sx={{ justifyContent: "space-between", transition: "all 0.3s ease-in-out" }}>
+      <AppBar
+        position="fixed"
+        className={sticky ? "sticky" : ""}
+        sx={{ bgcolor: "#fff", boxShadow: "0 2px 4px rgba(0,0,0,0.1)" }}
+      >
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            transition: "all 0.3s ease-in-out",
+          }}
+        >
           <Grid item display={{ xs: "none", md: "block" }}>
-            <Image src={logoSite} width={150} height={100} alt="Logo" />
+            <Image src={LightTransparent} width={150} height={100} alt="Logo" />
           </Grid>
           <Grid item display={{ xs: "block", md: "none" }}>
-            <Image src={logoSite} width={100} height={70} alt="Logo" />
+            <Image src={LightTransparent} width={100} height={70} alt="Logo" />
           </Grid>
           <Grid item sx={{ display: { xs: "none", md: "block" } }}>
             <List sx={{ display: "flex", gap: 2 }}>
@@ -104,7 +122,10 @@ function HeaderLayout() {
                       paddingBottom: 1,
                       width: "max-content",
                       color: router.pathname === item.href ? "red" : "#000",
-                      borderBottom: router.pathname === item.href ? "2px solid red" : "none",
+                      borderBottom:
+                        router.pathname === item.href
+                          ? "2px solid red"
+                          : "none",
                       "&:hover": {
                         borderBottom: "1px solid red",
                       },
@@ -117,23 +138,45 @@ function HeaderLayout() {
               ))}
             </List>
           </Grid>
-          <Grid item sx={{ display: { xs: "none", md: "block" } }}>
+          <Grid item sx={{ display: { xs: "none", md: "block" } }} >
+            <Link href={'/registration'}>
+
+            <Button
+              variant="outlined"
+              sx={{
+                // backgroundColor: "#e66551",
+                fontFamily: "iran-sans",
+                // color: "#fff",
+                padding: "8px 24px",
+                borderRadius: "30px",
+                borderColor: "#e66551",
+                "&:hover": {
+                  backgroundColor: "#030303",
+                color: "#fff",
+
+                },
+                margin:'0 10px'
+              }}
+            >
+              ورود / ثبت نام
+            </Button>
+            </Link>
+          
             <Button
               variant="contained"
               sx={{
                 backgroundColor: "#e66551",
                 fontFamily: "iran-sans",
                 color: "#fff",
-                padding: "16px 24px",
-                borderRadius:'30px',
-                borderColor:'#e66551',
+                padding: "8px 24px",
+                borderRadius: "30px",
+                borderColor: "#e66551",
                 "&:hover": {
                   backgroundColor: "#030303",
                 },
               }}
             >
-                
-           تماس مربیگری رایگان خود را درخواست کنید  <ArrowBackIcon/> 
+              فرم ارتباط با ما <ArrowBackIcon />
             </Button>
           </Grid>
           <Grid item sx={{ display: { xs: "block", md: "none" } }}>
@@ -142,7 +185,7 @@ function HeaderLayout() {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ ml: {xs:0,md:2} }}
+              sx={{ ml: { xs: 0, md: 2 } }}
             >
               <MenuIcon sx={{ color: "red" }} />
             </IconButton>
